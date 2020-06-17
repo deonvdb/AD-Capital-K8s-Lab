@@ -29,20 +29,6 @@ phases:
     steps:
     - type: K8S_DEPLOYMENT_ROLLING
       name: Rollout Deployment
-    - type: APP_DYNAMICS
-      name: AppDynamics
-      properties:
-        analysisServerConfigId: poV7Ke0BSEKj3JaUlSZjtQ
-        analysisTolerance: LOW
-        applicationId: '8'
-        comparisonStrategy: COMPARE_WITH_PREVIOUS
-        executeWithPreviousSteps: false
-        hostnameTemplate: ${instance.podName}
-        templateUuid: null
-        templateVariables: null
-        templateVersion: null
-        tierId: '15'
-        timeDuration: 15
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Verify
