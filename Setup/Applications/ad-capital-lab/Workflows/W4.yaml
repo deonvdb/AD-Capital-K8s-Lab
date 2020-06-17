@@ -37,8 +37,11 @@ phases:
         applicationId: '8'
         comparisonStrategy: COMPARE_WITH_PREVIOUS
         executeWithPreviousSteps: false
-        hostnameTemplate: ${host.hostName}
-        tierId: '14'
+        hostnameTemplate: ${instance.podName}
+        templateUuid: null
+        templateVariables: null
+        templateVersion: null
+        tierId: '15'
         timeDuration: 15
     stepsInParallel: false
   - type: K8S_PHASE_STEP
